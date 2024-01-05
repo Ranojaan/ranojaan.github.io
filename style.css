@@ -358,15 +358,17 @@ article .icon {
 .project-row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem; /* Adjust spacing between projects */
   margin-bottom: 2rem; /* Adjust as needed */
 }
 
 .color-container {
+  flex: 0 0 calc(33.333% - 2rem); /* Adjust width for each project */
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
   border-radius: 2rem;
-  flex: 0 0 calc(33.333% - 2rem); /* Adjust width for each project */
   margin-bottom: 2rem; /* Adjust spacing between rows */
 }
 
@@ -386,7 +388,6 @@ article .icon {
   color: black;
   border-color: rgb(163, 163, 163);
 }
-
 /* CONTACT */
 
 #contact {
